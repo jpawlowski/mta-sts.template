@@ -41,7 +41,8 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 *Optional (but __highly recommended__):*
 
-7. Create a `TLSRPT` record for `_smtp._tls.<your_domain.tld>` in your domain's DNS to enable reporing
+7. Create another `TXT` record for `_smtp._tls.<your_domain.tld>` in your domain's DNS to enable reporting.
+   You may copy & paste this to your DNS provider:
 
    ```dns
    #HOST         #TTL    #TYPE    #VALUE
@@ -49,7 +50,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
    ```
 
    Note that the e-mail recipient mailbox shall be on a different domain _without_ MTA-STS being configured.
-   It is also quite painful to manually deal with the reports other e-mail providers will send to you. For that particular reason, you may want to consider sending these e-mail to a 3rd-party tool like [Report URI](https://report-uri.com/), [URIports](https://www.uriports.com/), or from other commercial providers.
+   It is also quite painful to manually deal with the reports other e-mail providers will send to you. For that particular reason, you may want to consider sending these e-mails to a 3rd-party tool like [Report URI](https://report-uri.com/), [URIports](https://www.uriports.com/), or from other commercial providers.
    
    You probably want this to be the same tool you might use for DMARC reports, like [DMARC Analyzer](https://www.dmarcanalyzer.com/) or [Dmarcian](https://dmarcian.com/).
 
