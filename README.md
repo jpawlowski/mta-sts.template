@@ -27,3 +27,17 @@ In case the sending e-mail server is not able to initiate a secure connection, i
    ```
 
    Note that you will need to change the `id=` here whenever you make changes to your `mta-sts.txt` policy file.
+
+6. Validate your setup, for example by using the [MTA-STS validator](https://aykevl.nl/apps/mta-sts/) created by [@aykevl](https://github.com/aykevl/mta-sts).
+
+*Optional (but __highly recommended__):*
+
+7. Create a `TLSRPT` record for `<your_domain.tld>` in your domain's DNS to enable reporing
+
+   ```dns
+   #HOST         #TTL    #TYPE    #VALUE
+   _smtp._tls    3600    TXT      "v=TLSRPTv1; rua=mailto:tls-rua@mailcheck.<your_domain.tld>"
+   ```
+
+   Note that the e-mail recipient mailbox shall be on a different domain _without_ MTA-STS being configured.
+   It is also quite painful to manually deal with the reports other e-mail providers will send to you. For that particular reason, you may want to consider using a 3rd-party tool like [Report URI](https://report-uri.com/), [URIports](https://www.uriports.com/), or from other commercial providers. You probably want this to be the same tool you might already be using for DMARC reports, like [DMARC Analyzer](https://www.dmarcanalyzer.com/) or [Dmarcian](https://dmarcian.com/).
