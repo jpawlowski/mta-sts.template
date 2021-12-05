@@ -1,12 +1,21 @@
-# 📩 A Template to host an MTA-STS Policy file on GitHub
+<h1 align="center">
+  <br>
+  📩 A Template to host an MTA-STS Policy file on GitHub
+  <br>
+</h1>
 
-This repository provides a template to host your _MTA Strict Transport Security (MTA-STS)_ [[RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461)] policy file on GitHub Pages.
+<h4 align="center">This repository provides a template to host your _MTA Strict Transport Security (MTA-STS)_ [[RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461)] policy file on GitHub Pages.</h4>
+
+<p align="center">
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#license">License</a>
+</p>
 
 MTA-STS is a security standard to secure e-mail delivery. E-mail servers that send inbound e-mail to your domain will be able to detect that your e-mail server supports SMTP-over-TLS via `STARTTLS` (also known as [Opportunistic TLS](https://en.wikipedia.org/wiki/Opportunistic_TLS)) before opening the actual connection.
 
 In case the sending e-mail server is not able to initiate a secure connection, it will end the connection to enforce transport layer encryption. This mitigates [Man-in-the-middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) DNS and SMTP [downgrade attacks](https://en.wikipedia.org/wiki/Downgrade_attack) that would allow an attacker to read or manipulate e-mail in transit.
 
-## Usage
+## How To Use
 
 1. Click on [**Use this template**](https://github.com/jpawlowski/mta-sts.template/generate) to create a copy to your own GitHub profile.
    You may name your repository whatever you like. For simplicity, you can name it `mta-sts.<your_domain.tld>`.
@@ -40,4 +49,16 @@ In case the sending e-mail server is not able to initiate a secure connection, i
    ```
 
    Note that the e-mail recipient mailbox shall be on a different domain _without_ MTA-STS being configured.
-   It is also quite painful to manually deal with the reports other e-mail providers will send to you. For that particular reason, you may want to consider using a 3rd-party tool like [Report URI](https://report-uri.com/), [URIports](https://www.uriports.com/), or from other commercial providers. You probably want this to be the same tool you might already be using for DMARC reports, like [DMARC Analyzer](https://www.dmarcanalyzer.com/) or [Dmarcian](https://dmarcian.com/).
+   It is also quite painful to manually deal with the reports other e-mail providers will send to you. For that particular reason, you may want to consider sending these e-mail to a 3rd-party tool like [Report URI](https://report-uri.com/), [URIports](https://www.uriports.com/), or from other commercial providers.
+   
+   You probably want this to be the same tool you might use for DMARC reports, like [DMARC Analyzer](https://www.dmarcanalyzer.com/) or [Dmarcian](https://dmarcian.com/).
+
+## License
+
+[MIT License](https://github.com/jpawlowski/mta-sts.template/blob/main/LICENSE.md)
+
+---
+
+> [julian.pawlowski.me](https://julian.pawlowski.me/) &nbsp;&middot;&nbsp;
+> GitHub [@jpawlowski](https://github.com/jpawlowski/mta-sts.template) &nbsp;&middot;&nbsp;
+> Twitter [@Loredo](https://twitter.com/Loredo)
