@@ -32,7 +32,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 *Optional (but __highly recommended__):*
 
-7. Create a `TLSRPT` record for `<your_domain.tld>` in your domain's DNS to enable reporing
+7. Create a `TLSRPT` record for `_smtp._tls.<your_domain.tld>` in your domain's DNS to enable reporing
 
    ```dns
    #HOST         #TTL    #TYPE    #VALUE
