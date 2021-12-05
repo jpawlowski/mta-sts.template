@@ -8,7 +8,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 ## Usage
 
-1. Click on [**Use this template**](https://github.com/jpawlowski/mta-sts.template/generate) to create a copy to your own Github profile.
+1. Click on [**Use this template**](https://github.com/jpawlowski/mta-sts.template/generate) to create a copy to your own GitHub profile.
    You may name your repository whatever you like. For simplicity, you can name it `mta-sts.<your_domain.tld>`.
 
 2. Change the file `.well-known/mta-sts.txt` according to your needs.
