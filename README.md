@@ -23,8 +23,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 2. Change the file `.well-known/mta-sts.txt` according to your needs.
 
-3. Create a `CNAME` record for `mta-sts.<your_domain.tld>` in your domain's DNS that points to `<user>.github.io` or `<organization>.github.io`.
-   See [GitHub Docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages) to learn more about custom domains on GitHub Pages.
+3. Create a `CNAME` record for `mta-sts.<your_domain.tld>` in your domain's DNS that points to `<user>.github.io` or `<organization>.github.io` and [enable GitHub Pages](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/).
 
 4. Open a browser to `https://mta-sts.<your_domain.tld>` and make sure it does not show any certificate warnings.
 
