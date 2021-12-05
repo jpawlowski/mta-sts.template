@@ -1,0 +1,5 @@
+version: STSv1
+mode: [enforce|testing|none] # 1. DECIDE YOUR MODE
+mx: mx1.your_domain.tld.     # 2. Add your primary mailserver hostname (see MX records in your DNS)
+mx: mx2.your_domain.tld.     # 3. If you have secondary mailservers, add one line for each.
+max_age: 604800
