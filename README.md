@@ -4,11 +4,12 @@
   <br>
 </h1>
 
-<h4 align="center">This repository provides a template to host your _MTA Strict Transport Security (MTA-STS)_ [[RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461)] policy file on GitHub Pages.</h4>
+<h4 align="center">Use this template to host your <i>MTA Strict Transport Security (MTA-STS)</i> <a href="https://datatracker.ietf.org/doc/html/rfc8461">[RFC 8461]</a> policy file on GitHub Pages.</h4>
 
 <p align="center">
   <a href="#how-to-use">How To Use</a> •
-  <a href="#license">License</a>
+  <a href="#license">License</a> •
+  <a href="#author">Author</a>
 </p>
 
 MTA-STS is a security standard to secure e-mail delivery. E-mail servers that send inbound e-mail to your domain will be able to detect that your e-mail server supports SMTP-over-TLS via `STARTTLS` (also known as [Opportunistic TLS](https://en.wikipedia.org/wiki/Opportunistic_TLS)) before opening the actual connection.
@@ -57,8 +58,8 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 [MIT License](https://github.com/jpawlowski/mta-sts.template/blob/main/LICENSE.md)
 
----
+## Author
 
-> [julian.pawlowski.me](https://julian.pawlowski.me/) &nbsp;&middot;&nbsp;
-> GitHub [@jpawlowski](https://github.com/jpawlowski/mta-sts.template) &nbsp;&middot;&nbsp;
-> Twitter [@Loredo](https://twitter.com/Loredo)
+[julian.pawlowski.me](https://julian.pawlowski.me/) &nbsp;&middot;&nbsp;
+GitHub [@jpawlowski](https://github.com/jpawlowski/mta-sts.template) &nbsp;&middot;&nbsp;
+Twitter [@Loredo](https://twitter.com/Loredo)
