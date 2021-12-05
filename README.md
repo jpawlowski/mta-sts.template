@@ -1,4 +1,4 @@
-# 📩 A Template to host an MTA-STS policy file on GitHub
+# 📩 A Template to host an MTA-STS Policy file on GitHub
 
 This repository provides a template to host your _MTA Strict Transport Security (MTA-STS)_ [[RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461)] policy file on GitHub Pages.
 
