@@ -56,7 +56,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 ## License
 
-[MIT License](https://github.com/jpawlowski/mta-sts.template/blob/main/LICENSE.md)
+[MIT License](https://github.com/jpawlowski/mta-sts.template/blob/gh-pages/LICENSE)
 
 ## Author
 
