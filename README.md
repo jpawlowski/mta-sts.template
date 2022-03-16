@@ -32,7 +32,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
    ```dns
    #HOST       #TTL    #TYPE    #VALUE
-   _mta-sts    3600    TXT      "v=STSv1; id=1634120459"
+   _mta-sts    3600    TXT      "v=STSv1; id=20220317000000Z"
    ```
 
    Note that you will need to change the `id=` here whenever you make changes to your `mta-sts.txt` policy file.
