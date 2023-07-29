@@ -23,7 +23,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 2. Change the file `.well-known/mta-sts.txt` according to your needs.
 
-3. Create a `CNAME` record for `mta-sts.<your_domain.tld>` in your domain's DNS that points to `<user>.github.io` or `<organization>.github.io` and [enable GitHub Pages](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/).
+3. Create a `CNAME` record for `mta-sts.<your_domain.tld>` in your domain's DNS that points to `<you_username>.github.io` or `<your_organization>.github.io` and [enable GitHub Pages](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/).
 
 4. Open a browser to `https://mta-sts.<your_domain.tld>` and make sure it does not show any certificate warnings.
 
@@ -32,12 +32,13 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
    ```dns
    #HOST       #TTL    #TYPE    #VALUE
-   _mta-sts    3600    TXT      "v=STSv1; id=20220317000000Z"
+   _mta-sts    3600    TXT      "v=STSv1; id=69696969696969"
    ```
 
-   Note that you will need to change the `id=` here whenever you make changes to your `mta-sts.txt` policy file.
+   **Note that you will need to change the `id=` here whenever you make changes to your `mta-sts.txt` policy file.**
+   
 
-6. Validate your setup, for example by using the [MTA-STS validator](https://aykevl.nl/apps/mta-sts/) created by [@aykevl](https://github.com/aykevl/mta-sts).
+7. Validate your setup, for example by using the [MTA-STS validator](https://aykevl.nl/apps/mta-sts/) created by [@aykevl](https://github.com/aykevl/mta-sts).
 
 *Optional (but __highly recommended__):*
 
@@ -46,7 +47,7 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
    ```dns
    #HOST         #TTL    #TYPE    #VALUE
-   _smtp._tls    3600    TXT      "v=TLSRPTv1; rua=mailto:tls-rua@mailcheck.<your_domain.tld>"
+   _smtp._tls    3600    TXT      "v=TLSRPTv1; rua=mailto:tls-rua@<your_domain.tld>"
    ```
 
    Note that the e-mail recipient mailbox shall be on a different domain _without_ MTA-STS being configured.
