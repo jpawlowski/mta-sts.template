@@ -32,13 +32,13 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
    ```dns
    #HOST       #TTL    #TYPE    #VALUE
-   _mta-sts    3600    TXT      "v=STSv1; id=69696969696969"
+   _mta-sts    3600    TXT      "v=STSv1; id=20220317000000Z"
    ```
 
    **Note that you will need to change the `id=` here whenever you make changes to your `mta-sts.txt` policy file.**
    
 
-7. Validate your setup, for example by using the [MTA-STS validator](https://aykevl.nl/apps/mta-sts/) created by [@aykevl](https://github.com/aykevl/mta-sts).
+6. Validate your setup, for example by using the [MTA-STS Lookup by MXToolBox](https://mxtoolbox.com/mta-sts.aspx), or looking into your [Hardenize Public Report](https://www.hardenize.com/).
 
 *Optional (but __highly recommended__):*
 
@@ -47,10 +47,10 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
    ```dns
    #HOST         #TTL    #TYPE    #VALUE
-   _smtp._tls    3600    TXT      "v=TLSRPTv1; rua=mailto:tls-rua@<your_domain.tld>"
+   _smtp._tls    3600    TXT      "v=TLSRPTv1; rua=mailto:tls-rua@mailcheck.<your_domain.tld>"
    ```
 
-   Note that the e-mail recipient mailbox shall be on a different domain _without_ MTA-STS being configured.
+   Note that the e-mail recipient mailbox shall be on a different domain _without_ MTA-STS being configured. This could be a subdomain like `mailcheck.<your_domain.tld>`.
    It is also quite painful to manually deal with the reports other e-mail providers will send to you. For that particular reason, you may want to consider sending these e-mails to a 3rd-party tool like [Report URI](https://report-uri.com/), [URIports](https://www.uriports.com/), or from other commercial providers.
    
    You probably want this to be the same tool you might use for DMARC reports, like [DMARC Analyzer](https://www.dmarcanalyzer.com/) or [Dmarcian](https://dmarcian.com/).
@@ -63,4 +63,4 @@ In case the sending e-mail server is not able to initiate a secure connection, i
 
 [julian.pawlowski.me](https://julian.pawlowski.me/) &nbsp;&middot;&nbsp;
 GitHub [@jpawlowski](https://github.com/jpawlowski/mta-sts.template) &nbsp;&middot;&nbsp;
-Twitter [@Loredo](https://twitter.com/Loredo)
+Mastodon [@Loredo@chaos.social](https://chaos.social/@Loredo)
