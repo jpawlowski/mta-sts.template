@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2021 Julian Pawlowski
+Copyright @ 2023 Julian Pawlowski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
