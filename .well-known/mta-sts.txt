@@ -2,5 +2,6 @@ version: STSv1
 mode: [enforce|testing|none] # 1. Decide your mode.
 mx: mx1.your_domain.tld      # 2. Add your primary mailserver hostname (see MX records in your DNS)
 mx: mx2.your_domain.tld      # 3. If you have secondary mailservers, add one line for each.
+                             #    In case all servers share the same subdomain, you may also use wildcards like *.mail.protection.outlook.com
 max_age: 604800              # 4. Depending on your mode above, 604800 seconds = 1 week might be a good value.
                              # 5. Remove all the comments (if that wasn't obvious to you).
