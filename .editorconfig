@@ -1,0 +1,22 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+
+# CSV, Markdown, and Text files
+[*.{csv,md,txt}]
+trim_trailing_whitespace = true
+
+# JSON and XML files
+[*.{json,xml,yml,code-workspace}]
+indent_style = space
+indent_size = 2
+
+# Matches the exact file .editorconfig
+[.editorconfig]
+indent_style = space
+indent_size = 2
